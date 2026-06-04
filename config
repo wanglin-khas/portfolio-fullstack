@@ -1,0 +1,12 @@
+# Clone repository kosong Anda
+git clone https://github.com/wanglin-khas/portfolio-fullstack.git
+cd portfolio-fullstack
+
+# Buat struktur folder
+mkdir -p frontend/app backend/src backend/prisma docs .github/workflows
+
+# Copy-paste semua file dari file list di bawah
+# Lalu push
+git add .
+git commit -m "Initial commit: Full Stack Developer Portfolio"
+git push origin main
