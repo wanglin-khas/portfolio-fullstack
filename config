@@ -1,12 +1,55 @@
-# Clone repository kosong Anda
+# Setup Awal Portfolio Fullstack
+
+## 1. Clone Repository
+```bash
 git clone https://github.com/wanglin-khas/portfolio-fullstack.git
 cd portfolio-fullstack
+```
 
-# Buat struktur folder
+## 2. Buat Struktur Folder
+```bash
 mkdir -p frontend/app backend/src backend/prisma docs .github/workflows
+```
 
-# Copy-paste semua file dari file list di bawah
-# Lalu push
+## 3. Inisialisasi Project
+```bash
+# Frontend setup
+cd frontend
+npm init -y
+npm install
+
+# Backend setup
+cd ../backend
+npm init -y
+npm install prisma
+npx prisma init
+```
+
+## 4. Konfigurasi Environment
+```bash
+# Copy .env.example ke .env
+cp .env.example .env
+# Edit .env dengan konfigurasi Anda
+```
+
+## 5. Push ke Repository
+```bash
 git add .
 git commit -m "Initial commit: Full Stack Developer Portfolio"
 git push origin main
+```
+
+## 6. Struktur Project
+```
+portfolio-fullstack/
+├── frontend/
+│   └── app/
+├── backend/
+│   ├── src/
+│   ├── prisma/
+│   └── package.json
+├── docs/
+├── .github/
+│   └── workflows/
+└── README.md
+```
